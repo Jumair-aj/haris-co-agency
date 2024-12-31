@@ -1,5 +1,6 @@
 import './App.css';
 import AppRouter from './routes/Router';
+import './Font/helvetica-neue-55.css'
 
 function App() {
   return (
