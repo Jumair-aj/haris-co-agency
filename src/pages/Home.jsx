@@ -43,7 +43,7 @@ export default function Home() {
       </div>
 
       <FeatureSection />
-      <div className="h-[620px] w-full bg-black p-[80px] flex flex-col gap-[91px] ">
+      <div className="h-[620px] w-full bg-[#0E0E0E] p-[80px] flex flex-col gap-[91px] ">
         <div className="flex flex-col gap-[50px]">
           <img
             src={BrandPartnerFirst}
@@ -57,19 +57,19 @@ export default function Home() {
           />
         </div>
         <div className="w-full flex justify-center">
-          <div className="underline flex gap-[11px]">
-            <Link
-              href="/services"
-              className="text-[18px] text-white text-opacity-[55%] "
+          <Link to="/clients" className=" flex gap-[11px] text-white/55 border-b border-white/55 pb-0.5">
+            <span
+              
+              className="text-[18px]  text-opacity-[55%] "
             >
               View All Clients
-            </Link>
+            </span>
             <img
               src={RightArrowOfWhite}
               alt="Right arrow"
-              className="w-[26px] font-medium h-full object-contain underline"
+              className="w-[26px] font-medium h-full object-contain"
             />
-          </div>
+          </Link>
         </div>
       </div>
     </div>
