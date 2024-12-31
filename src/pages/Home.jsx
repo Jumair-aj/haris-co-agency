@@ -5,6 +5,7 @@ import BrandPartnerFirst from "@/assets/images/brandPartnerFirst.png";
 import BrandPartnerSecond from "@/assets/images/brandPartnerSecond.png";
 import BannerVideo from "@/assets/videos/banner.mp4";
 import FeatureSection from '@/components/FeatureSection';
+import OurWorks from '../components/OurWorks';
 
 export default function Home() {
   return (
@@ -72,6 +73,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
+      <OurWorks/>
     </div>
   );
 }
