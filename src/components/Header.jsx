@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '@/assets/images/Haris&Co-logo.svg';
-import ContactButton from './ContactButton';
+// import ContactButton from './ContactButton';
 
 
 export default function Header() {
@@ -26,7 +26,7 @@ export default function Header() {
 
 
         </div>
-       <ContactButton text='Contact Us' href='/contact'/>
+       {/* <ContactButton text='Contact Us' href='/contact'/> */}
       </div>
 
 

@@ -6,6 +6,7 @@ import BrandPartnerSecond from "@/assets/images/brandPartnerSecond.png";
 import BannerVideo from "@/assets/videos/banner.mp4";
 import FeatureSection from '@/components/FeatureSection';
 import OurWorks from '../components/OurWorks';
+import ClientsSection from '../components/ClientsSection';
 
 export default function Home() {
   return (
@@ -74,6 +75,7 @@ export default function Home() {
         </div>
       </div>
       <OurWorks/>
+      <ClientsSection/>
     </div>
   );
 }
