@@ -7,6 +7,9 @@ import BannerVideo from "@/assets/videos/banner.mp4";
 import FeatureSection from '@/components/FeatureSection';
 import OurWorks from '../components/OurWorks';
 import ClientsSection from '../components/ClientsSection';
+import AddressSection from '../components/AddressSection';
+import { BlogSection } from '../components/BlogSection';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -75,6 +78,9 @@ export default function Home() {
       </div>
       <OurWorks />
       <ClientsSection />
+      <AddressSection/>
+      <BlogSection/>
+      <Footer/>
     </div>
   );
 }
