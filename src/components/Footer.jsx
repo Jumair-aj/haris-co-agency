@@ -43,11 +43,11 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-[115px] flex justify-between mb-[40px]">
-        <div className="w-[85%] flex gap-[60px]">
+        <div className=" flex gap-[60px]">
 <p className="text-[18px]">Privacy</p>
 <p className="text-[18px]">Terms & Conditions</p>
         </div>
-        <div className="15%">
+        <div className="">
 <p className="text-[18px]">© 2024.Haris&Co</p>
         </div>
 
