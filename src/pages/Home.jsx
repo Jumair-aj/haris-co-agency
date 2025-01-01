@@ -59,9 +59,8 @@ export default function Home() {
           />
         </div>
         <div className="w-full flex justify-center">
-          <Link to="/clients" className=" flex gap-[11px] text-white/55 border-b border-white/55 pb-0.5">
+          <Link to="/clients" className=" flex gap-[11px] text-white/55 border-b border-white/55 pb-0.5 hover:text-white hover:border-white">
             <span
-              
               className="text-[18px]  text-opacity-[55%] "
             >
               View All Clients
@@ -74,8 +73,8 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <OurWorks/>
-      <ClientsSection/>
+      <OurWorks />
+      <ClientsSection />
     </div>
   );
 }
