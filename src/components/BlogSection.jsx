@@ -8,63 +8,63 @@ import { MoveRight } from "lucide-react";
 
 export const BlogSection = () => {
   return (
-    <div className="px-[80px] bg-black ">
-      <div className="py-[57px] ">
-        <p className="text-[40px] font-medium text-white">
+    <div className="px-4 lg:px-[80px] bg-[#141414] ">
+      <div className="py-12 lg:py-[57px] ">
+        <p className="text-[32px] lg:text-[40px] font-medium text-white">
           Latest News & Blogs
         </p>
       </div>
 
-      <div className="  flex gap-[81px] pb-[81px] w-full border-b" style={{ borderColor: "rgba(255, 255, 255, 0.55)" }}>
+      <div className="flex flex-col lg:flex-row gap-5 lg:gap-[81px] pb-[40px] lg:pb-[81px] w-full border-b" style={{ borderColor: "rgba(255, 255, 255, 0.55)" }}>
         <div>
           <img src={Blog1} alt="" />
         </div>
         <div className="flex flex-col justify-between">
-          <div className="flex flex-col">
-            <p className="text-[50px] font-medium text-white ">
+          <div className="flex flex-col gap-3">
+            <p className=" text-[32px] lg:text-[50px] font-medium text-white ">
               Styling an online presence for Disha Creationz!
             </p>
-            <p className="text-[24px] text-white/55">Web Development & UI/UX</p>
+            <p className="text-[20px] tlg:ext-[24px] text-white/55 mb-10">Web Development & UI/UX</p>
           </div>
           <div>
-            <p className="text-white/55 text-[24px]">
+            <p className="text-white/55 text-[20px] lg:text-[24px]">
               November 07, 2024 . 6 min read{" "}
             </p>
           </div>
         </div>
       </div>
 
-      <div className="flex mt-[105px] gap-[81px] pb-[81px] w-full border-b" style={{ borderColor: "rgba(255, 255, 255, 0.55)" }}>
+      <div className="flex flex-col lg:flex-row mt-[105px] gap-5 lg:gap-[81px] pb-[40px] lg:pb-[81px] w-full border-b" style={{ borderColor: "rgba(255, 255, 255, 0.55)" }}>
         <div>
           <img src={Blog2} alt="" />
         </div>
         <div className="flex flex-col justify-between">
-          <div className="flex flex-col">
-            <p className="text-[50px] font-medium text-white ">
+          <div className="flex flex-col gap-3">
+            <p className="text-[32px] lg:text-[50px] font-medium text-white ">
               Styling an online presence for Disha Creationz!
             </p>
-            <p className="text-[24px] text-white/55">Web Development & UI/UX</p>
+            <p className="text-[20px] lg:text-[24px] text-white/55 mb-10">Web Development & UI/UX</p>
           </div>
           <div>
-            <p className="text-white/55 text-[24px]">
+            <p className="text-white/55 text-[20px] lg:text-[24px]">
               November 07, 2024 . 6 min read{" "}
             </p>
           </div>
         </div>
       </div>
-      <div className="flex mt-[105px] gap-[81px] pb-[81px] w-full " >
+      <div className="flex flex-col lg:flex-row mt-[105px] gap-5 lg:gap-[81px] pb-[40px] lg:pb-[81px] w-full " >
         <div>
           <img src={Blog3} alt="" />
         </div>
         <div className="flex flex-col justify-between">
-          <div className="flex flex-col">
-            <p className="text-[50px] font-medium text-white ">
+          <div className="flex flex-col gap-3">
+            <p className="text-[32px] lg:text-[50px] font-medium text-white ">
               Styling an online presence for Disha Creationz!
             </p>
-            <p className="text-[24px] text-white/55">Web Development & UI/UX</p>
+            <p className="text-[20px] lg:text-[24px] text-white/55 mb-10">Web Development & UI/UX</p>
           </div>
           <div>
-            <p className="text-white/55 text-[24px]">
+            <p className="text-white/55 text-[20px] lg:text-[24px]">
               November 07, 2024 . 6 min read{" "}
             </p>
           </div>
