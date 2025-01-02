@@ -3,42 +3,42 @@ import Logo from "@/assets/images/Haris&Co-black.svg";
 
 function AddressSection() {
   return (
-    <div className="px-[80px] bg-white mb-[43px]">
-      <div className="mt-[80px] mb-[80px]">
+    <div className="px-[80px] bg-white my-[90px]">
+      <div className="">
         <p className="text-[40px] font-medium text-black">Regions We Operate</p>
       </div>
-      <div className="flex justify-center">
+      <div className="flex  mt-[90px] w-9/12 mx-auto">
       <div className="flex flex-col gap-[49px] h-full pr-[70px] border-r border-r-gray-300">
           <div>
             <img src={Logo} alt="Haris&Co-logo" />
           </div>
-          <div className="flex w-full justify-center">
+          <div className="flex w-full  gap-4 items-start">
             <div className="w-[20%]">
-              <p className="text-[24px] font-bold text-black">Address :</p>
+              <p className="text-2xl font-medium text-black text-nowrap">Address :</p>
             </div>
-            <div className="w-[80%]">
-              <p className="text-[24px] text-black text-start">
+            <div className="">
+              <p className="text-2xl text-black text-start font-[thin]">
                 4, 6QGR+7PW WING Avenue, Panniyankara, Kozhikode, Kerala 673003
               </p>
             </div>
           </div>
 
-          <div className="flex w-full justify-center">
+          <div className="flex w-full  gap-4 items-start">
             <div className="w-[20%]">
-              <p className="text-[24px] font-bold text-black">Phone :</p>
+              <p className="text-2xl font-medium text-black text-nowrap">Phone :</p>
             </div>
-            <div className="w-[80%]">
-              <p className="text-[24px] text-black text-start">
-               080757 72921
+            <div className="">
+              <p className="text-2xl text-black text-start font-[thin]">
+              080757 72921
               </p>
             </div>
           </div>
-          <div className="flex w-full justify-center">
+          <div className="flex w-full  gap-4">
             <div className="w-[20%]">
-              <p className="text-[24px] font-bold text-black">Hours :</p>
+              <p className="text-2xl font-medium text-black text-nowrap">Hours :</p>
             </div>
-            <div className="w-[80%]">
-              <p className="text-[24px] text-black text-start">
+            <div className="">
+              <p className="text-2xl text-black text-start font-[thin]">
               09:30 AM - 06:30 PM
               </p>
             </div>
@@ -49,33 +49,33 @@ function AddressSection() {
           <div>
             <img src={Logo} alt="Haris&Co-logo" />
           </div>
-          <div className="flex w-full justify-center">
+          <div className="flex w-full  gap-4">
             <div className="w-[20%]">
-              <p className="text-[24px] font-bold text-black">Address :</p>
+              <p className="text-2xl font-medium text-black text-nowrap">Address :</p>
             </div>
-            <div className="w-[80%]">
-              <p className="text-[24px] text-black text-start">
+            <div className="">
+              <p className="text-2xl text-black text-start font-[thin]">
                 4, 6QGR+7PW WING Avenue, Panniyankara, Kozhikode, Kerala 673003
               </p>
             </div>
           </div>
 
-          <div className="flex w-full justify-center">
+          <div className="flex w-full  gap-4">
             <div className="w-[20%]">
-              <p className="text-[24px] font-bold text-black">Phone :</p>
+              <p className="text-2xl font-medium text-black text-nowrap">Phone :</p>
             </div>
-            <div className="w-[80%]">
-              <p className="text-[24px] text-black text-start">
-               080757 72921
+            <div className="">
+              <p className="text-2xl text-black text-start font-[thin]">
+              080757 72921
               </p>
             </div>
           </div>
-          <div className="flex w-full justify-center">
+          <div className="flex w-full  gap-4">
             <div className="w-[20%]">
-              <p className="text-[24px] font-bold text-black">Hours :</p>
+              <p className="text-2xl font-medium text-black text-nowrap">Hours :</p>
             </div>
-            <div className="w-[80%]">
-              <p className="text-[24px] text-black text-start">
+            <div className="">
+              <p className="text-2xl text-black text-start font-[thin]">
               09:30 AM - 06:30 PM
               </p>
             </div>

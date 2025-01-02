@@ -3,22 +3,20 @@ import Header from "@/components/Header";
 import RightArrowOfWhite from "@/assets/images/icons/rightArrowOffwhite.png";
 import BrandPartnerFirst from "@/assets/images/brandPartnerFirst.png";
 import BrandPartnerSecond from "@/assets/images/brandPartnerSecond.png";
-import BannerVideo from "@/assets/videos/banner.mp4";
 import FeatureSection from '@/components/FeatureSection';
 import OurWorks from '../components/OurWorks';
 import ClientsSection from '../components/ClientsSection';
 import AddressSection from '../components/AddressSection';
 import { BlogSection } from '../components/BlogSection';
 import Footer from '../components/Footer';
+import { MoveRight } from 'lucide-react';
+import VideoBanner from '../components/VideoBanner';
 
 export default function Home() {
   return (
     <div>
       <Header />
-      <div className="bg-white  w-full flex justify-center items-center">
-        {/* <p className="text-[44px] text-black font-bold">need</p> */}
-        <video src={BannerVideo} controls={false} autoPlay={true} loop={true} muted />
-      </div>
+     <VideoBanner/>
       <div className="py-[96px]  bg-[#0E0E0E] w-full flex flex-col gap-[87px] items-center justify-center">
         <div className="text-center px-[20%]">
           <p className="text-[64px] text-white opacity-100 font-medium leading-tight">
@@ -30,17 +28,17 @@ export default function Home() {
         <div className=" w-full flex justify-around">
           <div className="flex flex-col text-start leading-none">
             <p className="text-[64px] font-medium  text-white text-opacity-50">500+</p>
-            <p className="text-[34px] text-white text-opacity-50 font-extralight">Clients</p>
+            <p className="text-[34px] text-white text-opacity-50 font-[thin]">Clients</p>
           </div>
           <div className="flex flex-col text-start leading-none">
             <p className="text-[64px] font-medium  text-white text-opacity-50">1000+</p>
-            <p className="text-[34px] text-white text-opacity-50 font-extralight">
+            <p className="text-[34px] text-white text-opacity-50 font-[thin]">
               Projects Done
             </p>
           </div>
           <div className="flex flex-col text-start leading-none">
             <p className="text-[64px] font-medium  text-white text-opacity-50">4.9</p>
-            <p className="text-[34px] text-white text-opacity-50 font-extralight">
+            <p className="text-[34px] text-white text-opacity-50 font-[thin]">
               Rating on Google
             </p>
           </div>
@@ -62,17 +60,13 @@ export default function Home() {
           />
         </div>
         <div className="w-full flex justify-center">
-          <Link to="/clients" className=" flex gap-[11px] text-white/55 border-b border-white/55 pb-0.5 hover:text-white hover:border-white">
+          <Link to="/clients" className="group flex gap-[11px] text-white/55 border-b border-white/55 pb-0.5 hover:text-white hover:border-white transition-all duration-300">
             <span
               className="text-[18px]  text-opacity-[55%] "
             >
               View All Clients
             </span>
-            <img
-              src={RightArrowOfWhite}
-              alt="Right arrow"
-              className="w-[26px] font-medium h-full object-contain"
-            />
+            <MoveRight size={30}  className='text-white/55 transition-all duration-300 group-hover:text-white'strokeWidth={1.8}/>
           </Link>
         </div>
       </div>

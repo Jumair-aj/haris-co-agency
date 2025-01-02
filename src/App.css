@@ -3,38 +3,49 @@
 @tailwind utilities;
 
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
-*{
+
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-body{
-    font-family: 'Helvetica Neue', sans-serif !important;
+
+body {
+	font-family: 'Helvetica Neue', sans-serif !important;
 }
 
-ul li{
+ul li {
 	list-style: none;
 }
-a{
+
+a {
 	text-decoration: none;
 }
-.container-main{
+
+.container-main {
 	max-width: 1450px;
 	margin: auto;
 	width: 90%;
 }
 
 @font-face {
-  font-family: thin;
-  src: url(./Font/HelveticaNeueLight.otf);
+	font-family: thin;
+	src: url(./Font/HelveticaNeueLight.otf);
 }
+
 @font-face {
-  font-family: boldtext;
-  src: url(./Font/HelveticaNeueBold.otf);
+	font-family: boldtext;
+	src: url(./Font/HelveticaNeueBold.otf);
 }
 
 .featureGradient {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        linear-gradient(263.64deg, rgba(0, 0, 0, 0) 11.72%, rgba(0, 0, 0, 0.65) 64.61%);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		linear-gradient(263.64deg, rgba(0, 0, 0, 0) 11.72%, rgba(0, 0, 0, 0.65) 64.61%);
 
+}
+
+.clientGradient {
+	border: 1px solid;
+	border-image-source: linear-gradient(180deg, #FFFFFF 0%, #2A2A2A 100%);
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 61.69%, rgba(255, 255, 255, 0.85) 82.03%);
 }

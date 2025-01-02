@@ -4,6 +4,7 @@ import Blog2 from "../assets/images/blogs/blog2.png";
 import Blog3 from "../assets/images/blogs/blog3.png";
 import RightArrowOfWhite from "@/assets/images/icons/rightArrowOffwhite.png";
 import { Link } from 'react-router-dom';
+import { MoveRight } from "lucide-react";
 
 export const BlogSection = () => {
   return (
@@ -70,18 +71,20 @@ export const BlogSection = () => {
         </div>
       </div>
       <div className="w-full flex justify-center mt-[80px] pb-[80px]  h-full">
-          <Link to="/clients" className=" flex gap-[11px] text-white/55 border-b border-white/55 pb-0.5">
+          <Link to="/clients" className="group flex gap-[11px] text-white/55 border-b border-white/55 pb-0.5 hover:text-white hover:border-white transition-all duration-300">
             <span
               
               className="text-[18px]  text-opacity-[55%] "
             >
               View All Testimonials
             </span>
+            <MoveRight size={30}  className='text-white/55 transition-all duration-300 group-hover:text-white'strokeWidth={1.8}/>
+{/* 
             <img
               src={RightArrowOfWhite}
               alt="Right arrow"
               className="w-[26px] font-medium h-full object-contain"
-            />
+            /> */}
           </Link>
         </div>
     </div>
