@@ -17,7 +17,7 @@ function AddressSection() {
               <p className="text-2xl font-medium text-black text-nowrap">Address :</p>
             </div>
             <div className="">
-              <p className="text-2xl text-black text-start font-[thin]">
+              <p className="pl-[18px] text-2xl text-black text-start font-[thin]">
                 4, 6QGR+7PW WING Avenue, Panniyankara, Kozhikode, Kerala 673003
               </p>
             </div>
@@ -54,7 +54,7 @@ function AddressSection() {
               <p className="text-2xl font-medium text-black text-nowrap">Address :</p>
             </div>
             <div className="">
-              <p className="text-2xl text-black text-start font-[thin]">
+              <p className="pl-[18px] text-2xl text-black text-start font-[thin]">
                 4, 6QGR+7PW WING Avenue, Panniyankara, Kozhikode, Kerala 673003
               </p>
             </div>

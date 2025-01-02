@@ -1,75 +1,23 @@
 import { Link } from 'react-router-dom';
 import Header from "@/components/Header";
-import RightArrowOfWhite from "@/assets/images/icons/rightArrowOffwhite.png";
-import BrandPartnerFirst from "@/assets/images/brandPartnerFirst.png";
-import BrandPartnerSecond from "@/assets/images/brandPartnerSecond.png";
 import FeatureSection from '@/components/FeatureSection';
 import OurWorks from '../components/OurWorks';
 import ClientsSection from '../components/ClientsSection';
 import AddressSection from '../components/AddressSection';
 import { BlogSection } from '../components/BlogSection';
 import Footer from '../components/Footer';
-import { MoveRight } from 'lucide-react';
 import VideoBanner from '../components/VideoBanner';
+import { ClientsDataSection } from '../components/ClientsDataSection';
+import BrandPartnerSection from '../components/BrandPartnerSection';
 
 export default function Home() {
   return (
     <div>
       <Header />
      <VideoBanner/>
-      <div className="py-[96px]  bg-[#0E0E0E] w-full flex flex-col gap-[87px] items-center justify-center">
-        <div className="text-center px-[20%]">
-          <p className="text-[64px] text-white opacity-100 font-medium leading-tight">
-            <span className="font-light opacity-50">  Crafting transformative </span>digital experiences<span className="font-light opacity-50"> for the world's leading
-              brands by seamlessly blending design, technology,</span> and marketing.
-          </p>
-        </div>
-
-        <div className=" w-full flex justify-around">
-          <div className="flex flex-col text-start leading-none">
-            <p className="text-[64px] font-medium  text-white text-opacity-50">500+</p>
-            <p className="text-[34px] text-white text-opacity-50 font-[thin]">Clients</p>
-          </div>
-          <div className="flex flex-col text-start leading-none">
-            <p className="text-[64px] font-medium  text-white text-opacity-50">1000+</p>
-            <p className="text-[34px] text-white text-opacity-50 font-[thin]">
-              Projects Done
-            </p>
-          </div>
-          <div className="flex flex-col text-start leading-none">
-            <p className="text-[64px] font-medium  text-white text-opacity-50">4.9</p>
-            <p className="text-[34px] text-white text-opacity-50 font-[thin]">
-              Rating on Google
-            </p>
-          </div>
-        </div>
-      </div>
-
+     <ClientsDataSection/>
       <FeatureSection />
-      <div className="h-[620px] w-full bg-[#0E0E0E] p-[80px] flex flex-col gap-[91px] ">
-        <div className="flex flex-col gap-[50px]">
-          <img
-            src={BrandPartnerFirst}
-            alt="Right arrow"
-            className="w-full  font-medium h-full object-contain"
-          />
-          <img
-            src={BrandPartnerSecond}
-            alt="Right arrow"
-            className="w-full  font-medium h-full object-contain"
-          />
-        </div>
-        <div className="w-full flex justify-center">
-          <Link to="/clients" className="group flex gap-[11px] text-white/55 border-b border-white/55 pb-0.5 hover:text-white hover:border-white transition-all duration-300">
-            <span
-              className="text-[18px]  text-opacity-[55%] "
-            >
-              View All Clients
-            </span>
-            <MoveRight size={30}  className='text-white/55 transition-all duration-300 group-hover:text-white'strokeWidth={1.8}/>
-          </Link>
-        </div>
-      </div>
+     <BrandPartnerSection/>
       <OurWorks />
       <ClientsSection />
       <AddressSection/>
