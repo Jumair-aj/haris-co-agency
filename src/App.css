@@ -49,3 +49,21 @@ a {
 	border-image-source: linear-gradient(180deg, #FFFFFF 0%, #2A2A2A 100%);
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 61.69%, rgba(255, 255, 255, 0.85) 82.03%);
 }
+.swiper-pagination {
+	bottom: 10px; /* Position the dots below the images */
+	text-align: center; /* Center the dots */
+  }
+  
+  .swiper-pagination-bullet {
+	background-color: white !important; /* White color for pagination bullets */
+	opacity: 0.6; /* Slight transparency */
+	width: 12px; /* Bullet size */
+	height: 12px; /* Bullet size */
+	margin: 0 4px; /* Space between bullets */
+	transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+  }
+  
+  .swiper-pagination-bullet-active {
+	background-color: white !important; /* White color for active bullet */
+	opacity: 1; /* Full opacity for active bullet */
+  }
