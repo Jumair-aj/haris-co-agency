@@ -14,7 +14,7 @@ export default function FeatureSection() {
   const [isHovered, setIsHovered] = useState('')
 
   return (
-    <div className={` h-full w-full py-[80px] px-[16px] md:px-[40px] lg:p-[80px]  flex justify-between items-center relative ${isHovered ? 'featureGradient' : ''}`}>
+    <div className={` h-full w-full py-[80px] px-[16px] md:px-[40px] lg:p-[80px]  flex justify-between items-center relative overflow-hidden ${isHovered ? 'featureGradient' : ''}`}>
       <div className="flex flex-col  gap-[50px] h-full">
         <div className={`flex gap-[20px] cursor-pointer items-center ${isHovered == "branding" && 'translate-x-10'}`} onMouseEnter={() => setIsHovered('branding')} onMouseLeave={() => setIsHovered('')} >
           <p className={`text-nowrap text-[22px] md:text-[30px] lg:text-[40px] text-black font-medium ${isHovered == "branding" ? 'text-white' : isHovered && ' text-white/55'}`}>

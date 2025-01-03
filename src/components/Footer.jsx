@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="px-[16px] md:px-[40px] lg:px-[80px] pt-[44px] bg-white text-nowrap">
       <div className="flex w-full justify-between flex-col lg:flex-row gap-[50px]">
-        <div className="w-[30%] flex flex-col gap-7">
+        <div className="max-w-[350px] flex flex-col gap-7">
           <div className="">
             <p className="text-[40px] text-black font-[thin]">Let’s Connect</p>
             <p className="text-[38px] text-black/65 font-medium leading-none xs:text-[48px]">
@@ -32,11 +32,11 @@ const Footer = () => {
           </div>
         </div>
         <div className=" items-start">
-          <div className="flex w-fit flex-col items-start">
-            <div className="w-fit h-full flex ">
-              <img className="h-full w-[350px] md:w-[500px] lg:w-[750px]" src={Logo} alt="Haris&Co" />
+          <div className="flex w-fit flex-col items-start lg:items-end">
+            <div className="w-fit h-full flex  ">
+              <img className="h-full w-[350px] md:w-[500px] lg:w-[500px] xl:w-[750px]" src={Logo} alt="Haris&Co" />
             </div>
-            <div className="flex justify-evenly md:justify-between gap-[35px] md:gap-[50px]  lg:gap-[60px] mt-[40px] *:font-[thin] w-full flex-wrap">
+            <div className="flex justify-evenly md:justify-between gap-[35px] md:gap-[50px]  lg:gap-x-[60px] lg:gap-y-[30px]  mt-[40px] *:font-[thin] w-full flex-wrap">
               <p className="text-[18px]">Services</p>
               <p className="text-[18px]">Works</p>
               <p className="text-[18px]">Clients</p>
