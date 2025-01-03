@@ -8,16 +8,16 @@ import { MoveRight } from "lucide-react";
 
 export const BlogSection = () => {
   return (
-    <div className="px-4 lg:px-[80px] bg-[#141414] ">
+    <div className="px-4 md:px-[40px] lg:px-[80px] bg-[#141414] ">
       <div className="py-12 lg:py-[57px] ">
-        <p className="text-[32px] lg:text-[40px] font-medium text-white">
+        <p className="text-[32px]  md:text-[40px] font-medium text-white">
           Latest News & Blogs
         </p>
       </div>
 
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-[81px] pb-[40px] lg:pb-[81px] w-full border-b" style={{ borderColor: "rgba(255, 255, 255, 0.55)" }}>
         <div>
-          <img src={Blog1} alt="" />
+          <img src={Blog1} alt="" className="w-full"/>
         </div>
         <div className="flex flex-col justify-between">
           <div className="flex flex-col gap-3">
@@ -36,7 +36,7 @@ export const BlogSection = () => {
 
       <div className="flex flex-col lg:flex-row mt-[105px] gap-5 lg:gap-[81px] pb-[40px] lg:pb-[81px] w-full border-b" style={{ borderColor: "rgba(255, 255, 255, 0.55)" }}>
         <div>
-          <img src={Blog2} alt="" />
+          <img src={Blog2} alt="" className="w-full"/>
         </div>
         <div className="flex flex-col justify-between">
           <div className="flex flex-col gap-3">
@@ -54,7 +54,7 @@ export const BlogSection = () => {
       </div>
       <div className="flex flex-col lg:flex-row mt-[105px] gap-5 lg:gap-[81px] pb-[40px] lg:pb-[81px] w-full " >
         <div>
-          <img src={Blog3} alt="" />
+          <img src={Blog3} alt="" className="w-full"/>
         </div>
         <div className="flex flex-col justify-between">
           <div className="flex flex-col gap-3">
@@ -80,7 +80,7 @@ export const BlogSection = () => {
             </span>
             <MoveRight size={30}  className='text-white/55 transition-all duration-300 group-hover:text-white'strokeWidth={1.8}/>
 {/* 
-            <img
+            <iclassName="w-full"mg
               src={RightArrowOfWhite}
               alt="Right arrow"
               className="w-[26px] font-medium h-full object-contain"

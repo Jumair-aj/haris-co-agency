@@ -7,20 +7,20 @@ import BrandPartnerSecond from "@/assets/images/brandPartnerSecond.png";
 
 const BrandPartnerSection = () => {
   return (
-    <div className="md:h-[620px] w-full bg-[#0E0E0E] py-[64px]  md:p-[80px] flex flex-col gap-[50px] md:gap-[91px] ">
-        <div className="flex flex-col gap-[50px]">
+    <div className=" bg-[#0E0E0E] py-[64px]  md:p-[80px] flex flex-col gap-[50px] md:gap-[91px] overflow-hidden">
+        <div  iv className="flex flex-col gap-[50px] w-max ">
           <img
             src={BrandPartnerFirst}
             alt="Right arrow"
-            className="w-full  font-medium h-full object-contain"
+            className="w-max  font-medium h-full object-cover"
           />
           <img
             src={BrandPartnerSecond}
             alt="Right arrow"
-            className="w-full  font-medium h-full object-contain"
+            className="w-max  font-medium h-full object-contain"
           />
         </div>
-        <div className="w-full flex justify-center">
+        <div className=" flex justify-center">
           <Link to="/clients" className="group flex gap-[11px] text-white/55 border-b border-white/55 pb-0.5 hover:text-white hover:border-white transition-all duration-300">
             <span
               className="text-[18px]  text-opacity-[55%] "

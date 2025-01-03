@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination"; // Import pagination styles for Swiper
+import 'swiper/css/navigation';
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 
 import client1 from "../assets/images/clients/client1.png";
@@ -27,7 +28,7 @@ function ClientsSection() {
   ];
 
   return (
-    <div className="bg-black px-[17px] md:px-[80px] h-full">
+    <div className="bg-black px-[17px] md:px-[40px] lg:px-[80px] h-full pb-[36px] md:pb-[0px]">
       <div className="py-[36px] md:py-[80px]">
         <p className="text-white text-[32px] md:text-[40px]">
           What Our Clients Say
@@ -38,7 +39,7 @@ function ClientsSection() {
           modules={[Navigation, Pagination]}
           spaceBetween={20}
           slidesPerView={1}
-          navigation={true}
+          navigation={false}
           pagination={true}
           breakpoints={{
             768: { slidesPerView: 2 },
@@ -77,7 +78,7 @@ function ClientsSection() {
         </Swiper>
 
       </div>
-      <div className="w-full flex justify-center mt-[80px] pb-[80px] h-full">
+      <div className="w-full hidden justify-center mt-[80px] pb-[80px] h-full md:flex">
         <Link
           to="/clients"
           className="group flex gap-[11px] text-white/55 border-b border-white/55 pb-0.5 hover:text-white hover:border-b-white transition-all duration-300"

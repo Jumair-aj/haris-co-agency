@@ -7,13 +7,13 @@ import { MoveRight } from 'lucide-react';
 
 function OurWorks() {
   return (
-    <div className='px-[17px] md:px-[80px] mt-[40px] md:mt-[80px]'>
+    <div className='px-[17px] md:px-[40px] lg:px-[80px] mt-[40px] md:mt-[80px]'>
       <p className='text-[40px]'>See Our Works</p>
-      <div className=' grid grid-cols-1 md:grid-cols-2 gap-y-[49px] md:gap-y-[150px] gap-x-[120px] mt-[40px] md:mt-[80px]'>
+      <div className=' grid grid-cols-1 lg:grid-cols-2 gap-y-[49px] md:gap-y-[100px] lg:gap-y-[150px] gap-x-[120px] mt-[40px] md:mt-[60px] lg:mt-[80px]'>
         {OurWorksData.map((data) => (
           <div
             key={data.id}
-            className={`h-full flex flex-col ${data.id % 2 === 0 ? 'mt-0 md:mt-[78px]' : ''}`}
+            className={`h-full flex flex-col ${data.id % 2 === 0 ? 'mt-0 lg:mt-[78px]' : ''}`}
           >
             <img className='w-full h-full' src={data.image} alt={data.heading} />
 

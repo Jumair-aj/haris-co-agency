@@ -12,10 +12,10 @@ export default function MobileMenu({ isOpen }) {
                 <img
                     src={Logo}
                     alt="Haris & Co."
-                    className=" h-[30px] "
+                    className=" h-[30px] md:h-[50px] lg:h-[66px]"
                 />
             </div>
-            <div className="flex flex-col justify-between gap-[20px] text-white *:font-light">
+            <div className="flex flex-col justify-between gap-[20px] text-white *:font-light *:md:text-[24px]">
                 <Link to="/services" className="text-[18px] font-[thin]">Services</Link>
                 <Link to="/works" className="text-[18px] font-[thin]">Works</Link>
                 <Link to="/clients" className="text-[18px] font-[thin]">Clients</Link>

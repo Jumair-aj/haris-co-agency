@@ -1,13 +1,14 @@
 import React from "react";
-import facebookIcon from "../assets/images/icons/facebookIcon.png";
-import instaIcon from "../assets/images/icons/instaIcon.png";
-import linkedInIcon from "../assets/images/icons/linkedInIcon.png";
+import facebookIcon from "../assets/images/icons/facebookIcon.svg";
+import instaIcon from "../assets/images/icons/instaIcon.svg";
+import linkedInIcon from "../assets/images/icons/linkedinIcon.svg";
+import xIcon from "../assets/images/icons/xIcon.svg";
 import Logo from "@/assets/images/Haris&Co-black.svg";
 
 const Footer = () => {
   return (
     <div className="px-[16px] md:px-[40px] lg:px-[80px] pt-[44px] bg-white text-nowrap">
-      <div className="flex w-full justify-between flex-col md:flex-row gap-[50px]">
+      <div className="flex w-full justify-between flex-col lg:flex-row gap-[50px]">
         <div className="w-[30%] flex flex-col gap-7">
           <div className="">
             <p className="text-[40px] text-black font-[thin]">Let’s Connect</p>
@@ -15,11 +16,19 @@ const Footer = () => {
               bd@harisand.co
             </p>
           </div>
-          <div className="flex  gap-6">
-            <img src={facebookIcon} alt="facebook Icon" />
-            <img src={instaIcon} alt="insta icon" />
-            <img src={linkedInIcon} alt="linked in Icon" />
-            <img src={facebookIcon} alt="x icon" />
+          <div className="flex gap-5 md:gap-6">
+            <div className="border-[1.5px] border-black rounded-full p-[21px] w-[70px] h-[70px]">
+              <img src={facebookIcon} alt="facebook Icon" className="max-w-max"/>
+            </div>
+            <div className="border-[1.5px] border-black rounded-full p-[21px] w-[70px] h-[70px]">
+              <img src={linkedInIcon} alt="linked in Icon" className="max-w-max"/>
+            </div>
+            <div className="border-[1.5px] border-black rounded-full p-[21px] w-[70px] h-[70px]">
+              <img src={xIcon} alt="x icon" className="max-w-max"/>
+            </div>
+            <div className="border-[1.5px] border-black rounded-full p-[21px] w-[70px] h-[70px]">
+              <img src={instaIcon} alt="insta icon" className="max-w-max"/>
+            </div>
           </div>
         </div>
         <div className=" items-start">
@@ -27,7 +36,7 @@ const Footer = () => {
             <div className="w-fit h-full flex ">
               <img className="h-full w-[350px] md:w-[500px] lg:w-[750px]" src={Logo} alt="Haris&Co" />
             </div>
-            <div className="flex justify-evenly md:justify-between gap-[35px] md:gap-[60px] mt-[40px] *:font-[thin] w-full flex-wrap">
+            <div className="flex justify-evenly md:justify-between gap-[35px] md:gap-[50px]  lg:gap-[60px] mt-[40px] *:font-[thin] w-full flex-wrap">
               <p className="text-[18px]">Services</p>
               <p className="text-[18px]">Works</p>
               <p className="text-[18px]">Clients</p>
