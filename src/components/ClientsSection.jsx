@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination"; // Import pagination styles for Swiper
+import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 
 import client1 from "../assets/images/clients/client1.png";
 import client2 from "../assets/images/clients/client2.png";
@@ -10,6 +11,12 @@ import client4 from "../assets/images/clients/client4.png";
 import PlayIcon from "@/assets/images/icons/play.svg";
 import { Link } from "react-router-dom";
 import { MoveRight } from "lucide-react";
+// styled-component wrap
+// one of data you want to show
+import SwiperCore from "swiper";
+
+// install Swiper modules
+SwiperCore.use([Navigation, Pagination]);
 
 function ClientsSection() {
   const clients = [
@@ -28,15 +35,11 @@ function ClientsSection() {
       </div>
       <div className="w-full">
         <Swiper
+          modules={[Navigation, Pagination]}
           spaceBetween={20}
           slidesPerView={1}
-          navigation
-          pagination={{
-            clickable: true,
-            type: "bullets",
-            bulletClass: "swiper-pagination-bullet", // Custom class for bullets
-            bulletActiveClass: "swiper-pagination-bullet-active", // Active bullet class
-          }}
+          navigation={true}
+          pagination={true}
           breakpoints={{
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 4 },
@@ -44,8 +47,8 @@ function ClientsSection() {
           className="swiper-pagination-white" // Add custom class
         >
           {clients.map((client, index) => (
-            <>
-              <SwiperSlide key={index}>
+
+            <SwiperSlide key={index}>
               <div className="relative">
                 <img
                   className="w-[400px] object-contain"
@@ -67,12 +70,12 @@ function ClientsSection() {
                 </div>
               </div>
             </SwiperSlide>
-            </>
-          
-            
+
+
+
           ))}
         </Swiper>
-       
+
       </div>
       <div className="w-full flex justify-center mt-[80px] pb-[80px] h-full">
         <Link

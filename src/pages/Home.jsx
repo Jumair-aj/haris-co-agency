@@ -14,15 +14,15 @@ export default function Home() {
   return (
     <div>
       <Header />
-     <VideoBanner/>
-     <ClientsDataSection/>
+      <VideoBanner />
+      <ClientsDataSection />
       <FeatureSection />
-     <BrandPartnerSection/>
+      <BrandPartnerSection />
       <OurWorks />
       <ClientsSection />
-      <AddressSection/>
-      <BlogSection/>
-      <Footer/>
+      <AddressSection />
+      <BlogSection />
+      <Footer />
     </div>
   );
 }

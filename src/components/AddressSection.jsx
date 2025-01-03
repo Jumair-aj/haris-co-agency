@@ -7,8 +7,8 @@ function AddressSection() {
       <div className="">
         <p className=" text-[32px] md:text-[40px] font-medium text-black">Regions We Operate</p>
       </div>
-      <div className="flex flex-col md:flex-row  mt-[50px] md:mt-[90px] md:w-9/12 mx-auto">
-      <div className="flex flex-col gap-[49px] h-full md:pr-[70px] pb-[36px] border-b md:border-r border-black md:border-r-gray-300">
+      <div className="flex flex-col md:flex-row  mt-[50px] md:mt-[90px] md:w-9/12 mx-auto ">
+      <div className="flex flex-col gap-[49px] h-full md:pr-[70px] pb-[36px] border-b md:border-r md:border-b-0 border-black md:border-r-black">
           <div>
           <img className="w-[252px] md:w-full" src={Logo} alt="Haris&Co-logo" />
           </div>
@@ -45,7 +45,7 @@ function AddressSection() {
           </div>
          
         </div>
-        <div className="flex mt-[44px] md:mt-0 flex-col gap-[49px] h-full md:pr-[70px] pb-[36px] border-b md:border-r border-r-gray-300">
+        <div className="flex mt-[44px] md:mt-0 flex-col gap-[49px] h-full md:pl-[70px] pb-[36px]">
           <div>
             <img className="w-[252px] md:w-full" src={Logo} alt="Haris&Co-logo" />
           </div>

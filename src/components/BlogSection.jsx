@@ -24,7 +24,7 @@ export const BlogSection = () => {
             <p className=" text-[32px] lg:text-[50px] font-medium text-white ">
               Styling an online presence for Disha Creationz!
             </p>
-            <p className="text-[20px] tlg:ext-[24px] text-white/55 mb-10">Web Development & UI/UX</p>
+            <p className="text-[20px] lg:text-[24px] text-white/55 mb-10">Web Development & UI/UX</p>
           </div>
           <div>
             <p className="text-white/55 text-[20px] lg:text-[24px]">

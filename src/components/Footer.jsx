@@ -11,11 +11,11 @@ const Footer = () => {
         <div className="w-[30%] flex flex-col gap-7">
           <div className="">
             <p className="text-[40px] text-black font-[thin]">Let’s Connect</p>
-            <p className="text-[48px] text-black/65 font-medium leading-none">
+            <p className="text-[38px] text-black/65 font-medium leading-none xs:text-[48px]">
               bd@harisand.co
             </p>
           </div>
-          <div className="flex justify-between gap-[25px]">
+          <div className="flex  gap-6">
             <img src={facebookIcon} alt="facebook Icon" />
             <img src={instaIcon} alt="insta icon" />
             <img src={linkedInIcon} alt="linked in Icon" />
@@ -46,7 +46,7 @@ const Footer = () => {
           <p>Terms & Conditions</p>
         </div>
         <div className="">
-          <p>© 2024.Haris&Co</p>
+          <p>&copy; 2024.Haris&Co</p>
         </div>
 
       </div>
