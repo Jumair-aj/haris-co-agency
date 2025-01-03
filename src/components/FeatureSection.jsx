@@ -71,7 +71,7 @@ export default function FeatureSection() {
               <img
                 src={BrandImg}
                 alt="Branding"
-                className="w-full h-full featureGradient"
+                className="w-full h-full featureGradient object-cover"
               />
             </div>
           ) :
@@ -80,7 +80,7 @@ export default function FeatureSection() {
                 <img
                   src={WebImg}
                   alt="Branding"
-                  className="w-full h-full featureGradient"
+                  className="w-full h-full featureGradient object-cover"
                 />
               </div>
             )
@@ -90,7 +90,7 @@ export default function FeatureSection() {
                   <img
                     src={CreativeImg}
                     alt="Branding"
-                    className="w-full h-full featureGradient"
+                    className="w-full h-full featureGradient object-cover"
                   />
                 </div>
               )
@@ -100,7 +100,7 @@ export default function FeatureSection() {
                     <img
                       src={DigitalImg}
                       alt="Branding"
-                      className="w-full h-full featureGradient"
+                      className="w-full h-full featureGradient object-cover"
                     />
                   </div>
                 )
@@ -110,7 +110,7 @@ export default function FeatureSection() {
                       <img
                         src={PerformanceImg}
                         alt="Branding"
-                        className="w-full h-full featureGradient"
+                        className="w-full h-full featureGradient object-cover"
                       />
                     </div>
                   )
@@ -120,7 +120,7 @@ export default function FeatureSection() {
                         <img
                           src={ProductionImg}
                           alt="Branding"
-                          className="w-full h-full featureGradient"
+                          className="w-full h-full featureGradient object-cover"
                         />
                       </div>
                     )
@@ -130,7 +130,7 @@ export default function FeatureSection() {
                           <img
                             src={SeoImg}
                             alt="Branding"
-                            className="w-full h-full featureGradient"
+                            className="w-full h-full featureGradient object-cover"
                           />
                         </div>
                       )
@@ -140,7 +140,7 @@ export default function FeatureSection() {
                             <img
                               src={SocialImg}
                               alt="Branding"
-                              className="w-full h-full featureGradient"
+                              className="w-full h-full featureGradient object-cover"
                             />
                           </div>
                         )

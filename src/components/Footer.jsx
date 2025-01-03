@@ -16,17 +16,17 @@ const Footer = () => {
               bd@harisand.co
             </p>
           </div>
-          <div className="flex gap-5 md:gap-6">
-            <div className="border-[1.5px] border-black rounded-full p-[21px] w-[70px] h-[70px]">
+          <div className="flex gap-3 sm:gap-5 md:gap-6">
+            <div className="border-[1.5px] border-black rounded-full p-[18.5px] sm:p-[21px] w-[65px] sm:w-[70px] h-[65px] sm:h-[70px]">
               <img src={facebookIcon} alt="facebook Icon" className="max-w-max"/>
             </div>
-            <div className="border-[1.5px] border-black rounded-full p-[21px] w-[70px] h-[70px]">
+            <div className="border-[1.5px] border-black rounded-full p-[18.5px] sm:p-[21px] w-[65px] sm:w-[70px] h-[65px] sm:h-[70px]">
               <img src={linkedInIcon} alt="linked in Icon" className="max-w-max"/>
             </div>
-            <div className="border-[1.5px] border-black rounded-full p-[21px] w-[70px] h-[70px]">
+            <div className="border-[1.5px] border-black rounded-full p-[18.5px] sm:p-[21px] w-[65px] sm:w-[70px] h-[65px] sm:h-[70px]">
               <img src={xIcon} alt="x icon" className="max-w-max"/>
             </div>
-            <div className="border-[1.5px] border-black rounded-full p-[21px] w-[70px] h-[70px]">
+            <div className="border-[1.5px] border-black rounded-full p-[18.5px] sm:p-[21px] w-[65px] sm:w-[70px] h-[65px] sm:h-[70px]">
               <img src={instaIcon} alt="insta icon" className="max-w-max"/>
             </div>
           </div>
