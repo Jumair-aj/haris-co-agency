@@ -25,20 +25,22 @@ export default function Header() {
         <img
           src={Logo}
           alt="Haris & Co."
-          className="w-full h-[30px] md:h-[50px] lg:h-[66px]"
+          className=" h-[30px] md:h-[50px] lg:h-[66px]"
         />
       </div>
       <div className='items-center gap-[49px] hidden lg:flex'>
-        <div className="flex justify-between gap-[40px] text-white *:font-light">
+        <div className="flex justify-between gap-[30px] xl:gap-[40px] text-white *:font-light">
           <Link to="/services" className="text-[18px] font-[thin]">Services</Link>
           <Link to="/works" className="text-[18px] font-[thin]">Works</Link>
           <Link to="/clients" className="text-[18px] font-[thin]">Clients</Link>
           <Link to="/awards" className="text-[18px] font-[thin]">Awards</Link>
-          <Link to="/about" className="text-[18px] font-[thin]">About us</Link>
+          <Link to="/about" className="text-[18px] font-[thin] text-nowrap">About us</Link>
           <Link to="/blogs" className="text-[18px] font-[thin]">Blogs</Link>
           <Link to="/careers" className="text-[18px] font-[thin]">Careers</Link>
         </div>
-        <ContactButton text='Contact Us' href='/contact' />
+        <div className="hidden xl:flex">
+          <ContactButton text='Contact Us' href='/contact' />
+        </div>
       </div>
 
       <div className="lg:hidden flex">

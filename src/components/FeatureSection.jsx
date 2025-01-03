@@ -145,7 +145,7 @@ export default function FeatureSection() {
                           </div>
                         )
                           :
-                          <p className="text-[230px] text-black font-bold tracking-[-4.5mm] font-[sans-serif]  hidden lg:flex" >Fearless</p>
+                          <p className="text-[165px] 2xl:text-[235px] text-black font-bold tracking-[-4.5mm] font-[sans-serif]  hidden xl:flex" >Fearless</p>
         }
       </div>
     </div>
