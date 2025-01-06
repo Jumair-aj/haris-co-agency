@@ -8,16 +8,16 @@ import BrandPartnerSecond from "@/assets/images/brandPartnerSecond.png";
 const BrandPartnerSection = () => {
   return (
     <div className=" bg-[#0E0E0E] py-[64px]  md:p-[80px] flex flex-col gap-[50px] md:gap-[91px] overflow-hidden">
-        <div  iv className="flex flex-col gap-[50px] w-max ">
+        <div  iv className="flex flex-col gap-[50px] w-max lg:w-fit">
           <img
             src={BrandPartnerFirst}
             alt="Right arrow"
-            className="w-max  font-medium h-full object-cover"
+            className="w-max  font-medium h-full object-cover opacity-[0.5]"
           />
           <img
             src={BrandPartnerSecond}
             alt="Right arrow"
-            className="w-max  font-medium h-full object-contain"
+            className="w-max  font-medium h-full object-contain opacity-[0.5]"
           />
         </div>
         <div className=" flex justify-center">

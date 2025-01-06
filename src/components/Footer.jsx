@@ -34,7 +34,7 @@ const Footer = () => {
         <div className=" items-start">
           <div className="flex w-fit flex-col items-start lg:items-end">
             <div className="w-fit h-full flex  ">
-              <img className="h-full w-[350px] md:w-[500px] lg:w-[500px] xl:w-[750px]" src={Logo} alt="Haris&Co" />
+              <img className="h-full w-[350px] md:w-[500px] lg:w-[500px] xl:w-[870px]" src={Logo} alt="Haris&Co" />
             </div>
             <div className="flex justify-evenly md:justify-between gap-[35px] md:gap-[50px]  lg:gap-x-[60px] lg:gap-y-[30px]  mt-[40px] *:font-[thin] w-full flex-wrap">
               <p className="text-[18px]">Services</p>

@@ -17,8 +17,8 @@ function OurWorks() {
           >
             <img className='w-full h-full' src={data.image} alt={data.heading} />
 
-            <p className='font-medium text-[24px] md:text-[36px] text-left ml-[-11px]'>{data.heading}</p>
-            <p className='text-black opacity-55 text-left text-[16px] md:text-[24px]'>{data.description}</p>
+            <p className='font-medium tracking-tighter text-[24px] md:text-[36px] text-left ml-[-11px]'>{data.heading}</p>
+            <p className='text-black font-[thin] opacity-55 text-left text-[16px] md:text-[24px]'>{data.description}</p>
           </div>
         ))}
       </div>
