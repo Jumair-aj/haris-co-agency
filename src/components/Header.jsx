@@ -22,17 +22,8 @@ export default function Header() {
     }
   };
 
-  var LOGO_SIZES
+  var LOGO_SIZES = window.innerWidth >= 1024 ? 66 : window.innerWidth >= 768 ? 50 : 30;
 
-  if (window.innerWidth >= 1024) {
-    LOGO_SIZES = 66;
-  }
-  else if (window.innerWidth >= 768) {
-    LOGO_SIZES = 50;
-  }
-  else {
-    LOGO_SIZES = 30;
-  }
   useEffect(() => {
     const handleScroll = () => {
       // Calculate scroll progress (0 to 1) over first 200px of scroll
@@ -54,8 +45,6 @@ export default function Header() {
   return (
     <div style={{
       height: LOGO_SIZES / ((LOGO_SIZES == 30 ? 0.15 : LOGO_SIZES == 50 ? 0.2 : 0) + scrollProgress) + 70 + window.scrollY + 'px',
-
-      transition: 'height 0.1s linear'
     }}>
       <div className="fixed z-10 px-[16px] md:px-[40px] lg:px-[80px] py-[35px] w-full bg-[#141414]  flex justify-between items-center flex-wrap " style={{ translateY: '-1000px' }}>
 
@@ -63,16 +52,15 @@ export default function Header() {
           <img
             src={Logo}
             alt="Haris & Co."
-            className="logo-resize transition-[height] duration-100"
+            className=""
             style={{
-              height: `${LOGO_SIZES / ((LOGO_SIZES == 30 ? 0.15 : LOGO_SIZES == 50 ? 0.2 : 0) + scrollProgress)}px`,
-              transition: 'height 0.1s linear'
+              height: `${LOGO_SIZES / ((LOGO_SIZES == 30 ? 0 : LOGO_SIZES == 50 ? 0.2 : 0) + scrollProgress)}px`,
 
             }}
           />
         </div>
-        <div className='items-center gap-[49px] hidden lg:flex ms-auto transition-all duration-100' style={{ gap: 49 / (0.15 + scrollProgress) + 'px' }}>
-          <div className="flex justify-between gap-[30px] xl:gap-[40px] text-white *:font-light transition-all duration-100" style={{ gap: 40 / (0.15 + scrollProgress) + 'px' }}>
+        <div className='items-center gap-[49px] hidden lg:flex ms-auto ' style={{ gap: 49 + (window.innerWidth / ((window.innerWidth > 1280 ? 200 - (20 - ((1300-window.innerWidth)/5)) : 100) * scrollProgress)) }}>
+          <div className="flex justify-between gap-[30px] xl:gap-[40px] text-white *:font-light  " style={{ gap: 20 + (window.innerWidth / ((window.innerWidth > 1280 ? 200 - (20 - ((1300-window.innerWidth)/5)) : 90) * scrollProgress)) }}>
             <Link to="/services" className="text-[18px] font-[thin]">Services</Link>
             <Link to="/works" className="text-[18px] font-[thin]">Works</Link>
             <Link to="/clients" className="text-[18px] font-[thin]">Clients</Link>

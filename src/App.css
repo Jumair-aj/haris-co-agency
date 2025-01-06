@@ -12,6 +12,7 @@
 
 body {
 	font-family: 'Helvetica Neue', sans-serif !important;
+	scroll-behavior: smooth;
 }
 
 ul li {
