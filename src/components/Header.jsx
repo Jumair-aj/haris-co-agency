@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '@/assets/images/Haris&Co-logo.svg';
+import Logo from '@/assets/images/Haris&Co.svg';
 import menuIcon from '@/assets/images/icons/menu.svg';
 import ContactButton from './ContactButton';
 import { useState, useEffect } from 'react';

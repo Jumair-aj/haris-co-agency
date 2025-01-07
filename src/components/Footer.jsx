@@ -3,12 +3,12 @@ import facebookIcon from "../assets/images/icons/facebookIcon.svg";
 import instaIcon from "../assets/images/icons/instaIcon.svg";
 import linkedInIcon from "../assets/images/icons/linkedinIcon.svg";
 import xIcon from "../assets/images/icons/xIcon.svg";
-import Logo from "@/assets/images/Haris&Co-black.svg";
+import Logo from "@/assets/images/Haris&Co-blk.svg";
 
 const Footer = () => {
   return (
     <div className="px-[16px] md:px-[40px] lg:px-[80px] pt-[44px] bg-white text-nowrap">
-      <div className="flex w-full justify-between flex-col lg:flex-row gap-[50px] lg:items-end">
+      <div className="flex w-full justify-between flex-col lg:flex-row gap-[50px] lg:items-center">
         <div className="max-w-full flex flex-col gap-7">
           <div className="">
             <p className="text-[40px] text-black font-[thin]">Let’s Connect</p>
