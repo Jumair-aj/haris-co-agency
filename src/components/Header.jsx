@@ -44,7 +44,7 @@ export default function Header() {
 
   return (
     <div style={{
-      height: LOGO_SIZES / ((LOGO_SIZES == 30 ? 0.15 : LOGO_SIZES == 50 ? 0.2 : 0) + scrollProgress) + 70 + window.scrollY + 'px',
+      height: LOGO_SIZES / ((LOGO_SIZES == 30 ? 0.15 : LOGO_SIZES == 50 ? 0.2 : 0) + scrollProgress) + 70+ 'px',
     }}>
       <div className="fixed z-10 px-[16px] md:px-[40px] lg:px-[80px] py-[35px] w-full bg-[#141414]  flex justify-between items-center flex-wrap " style={{ translateY: '-1000px' }}>
 
