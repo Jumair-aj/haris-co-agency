@@ -10,6 +10,7 @@ import MobileMenu from './MobileMenu';
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0.175);
+  const [logoSize, setLogoSize] = useState(0);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -22,31 +23,58 @@ export default function Header() {
     }
   };
 
-  var LOGO_SIZES = window.innerWidth >= 1024 ? 66 : window.innerWidth >= 768 ? 50 : 30;
+  // Calculate logo size based on viewport width
+  const calculateLogoSize = React.useCallback(() => {
+    if (window.innerWidth >= 1024) return 66;
+    if (window.innerWidth >= 768) return 50;
+    return 30;
+  }, []);
 
+  // Handle scroll events with throttling
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      // Calculate scroll progress (0 to 1) over first 200px of scroll
-      const scrollRange = 200;
-      const newProgress = Math.min(window.scrollY / scrollRange, 1);
-      if (newProgress < 0.175) {
-        setScrollProgress(0.175);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const scrollRange = 200;
+          const newProgress = Math.max(0.175, Math.min(window.scrollY / scrollRange, 1));
+          setScrollProgress(newProgress);
+          ticking = false;
+        });
+        ticking = true;
       }
-      else setScrollProgress(newProgress);
-    }
+    };
 
+    // Initialize logo size
+    setLogoSize(calculateLogoSize());
 
+    // Handle resize events
+    const handleResize = () => {
+      setLogoSize(calculateLogoSize());
+    };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [])
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [calculateLogoSize]);
+  // Calculate scaled logo size
+  const getScaledLogoSize = () => {
+    const scaleFactor = logoSize === 30 ? 0.05 : logoSize === 50 ? 0.2 : 0;
+    return logoSize / (scaleFactor + scrollProgress);
+  };
+
+  // Calculate header height to prevent layout shifts
+  const headerHeight = getScaledLogoSize() + 70;
 
 
   return (
-    <div style={{
-      height: LOGO_SIZES / ((LOGO_SIZES == 30 ? 0.15 : LOGO_SIZES == 50 ? 0.2 : 0) + scrollProgress) + 70+ 'px',
-    }}>
-      <div className="fixed z-10 px-[16px] md:px-[40px] lg:px-[80px] py-[35px] w-full bg-[#141414]  flex justify-between items-center flex-wrap " style={{ translateY: '-1000px' }}>
+    <div style={{ height: `${headerHeight}px` }}>
+      <header className="fixed z-10 px-[16px] md:px-[40px] lg:px-[80px] py-[35px] w-full bg-[#141414]  flex justify-between items-center flex-wrap " style={{ translateY: '-1000px' }}>
 
         <div className=''>
           <img
@@ -54,13 +82,12 @@ export default function Header() {
             alt="Haris & Co."
             className=""
             style={{
-              height: `${LOGO_SIZES / ((LOGO_SIZES == 30 ? 0 : LOGO_SIZES == 50 ? 0.2 : 0) + scrollProgress)}px`,
-
+              height: `${getScaledLogoSize()}px`,
             }}
           />
         </div>
-        <div className='items-center gap-[49px] hidden lg:flex ms-auto ' style={{ gap: 49 + (window.innerWidth / ((window.innerWidth > 1280 ? 200 - (20 - ((1300-window.innerWidth)/5)) : 100) * scrollProgress)) }}>
-          <div className="flex justify-between gap-[30px] xl:gap-[40px] text-white *:font-light  " style={{ gap: 20 + (window.innerWidth / ((window.innerWidth > 1280 ? 200 - (20 - ((1300-window.innerWidth)/5)) : 90) * scrollProgress)) }}>
+        <div className='items-center gap-[49px] hidden lg:flex ms-auto ' style={{ gap: 49 + (window.innerWidth / ((window.innerWidth > 1280 ? 200 - (20 - ((1300 - window.innerWidth) / 5)) : 100) * scrollProgress)) }}>
+          <div className="flex justify-between gap-[30px] xl:gap-[40px] text-white *:font-light  " style={{ gap: 20 + (window.innerWidth / ((window.innerWidth > 1280 ? 200 - (20 - ((1300 - window.innerWidth) / 5)) : 90) * scrollProgress)) }}>
             <Link to="/services" className="text-[18px] font-[thin]">Services</Link>
             <Link to="/works" className="text-[18px] font-[thin]">Works</Link>
             <Link to="/clients" className="text-[18px] font-[thin]">Clients</Link>
@@ -104,7 +131,7 @@ export default function Header() {
         </div>
 
 
-      </div>
+      </header>
     </div>
   );
 }
