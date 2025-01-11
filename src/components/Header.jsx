@@ -57,14 +57,14 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll, { passive: true });
     window.addEventListener('resize', handleResize);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleResize);
-    };
-  }, [calculateLogoSize]);
+    // return () => {
+    //   window.removeEventListener('scroll', handleScroll);
+    //   window.removeEventListener('resize', handleResize);
+    // };
+  }, [calculateLogoSize,window,window.scrollY]);
   // Calculate scaled logo size
-  const getScaledLogoSize = () => {
-    const scaleFactor = logoSize === 30 ? 0.05 : logoSize === 50 ? 0.2 : 0;
+  const getScaledLogoSize = (mobileSize = 0.15) => {
+    const scaleFactor = logoSize === 30 ? mobileSize : logoSize === 50 ? 0.2 : 0;
     return logoSize / (scaleFactor + scrollProgress);
   };
 
@@ -82,7 +82,7 @@ export default function Header() {
             alt="Haris & Co."
             className=""
             style={{
-              height: `${getScaledLogoSize()}px`,
+              height: `${getScaledLogoSize(0)}px`,
             }}
           />
         </div>
