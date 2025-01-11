@@ -53,47 +53,96 @@ a {
 
 
 .swiper-pagination {
-	text-align: center; /* Center the dots */
-	position: relative!important;
+	text-align: center;
+	/* Center the dots */
+	position: relative !important;
 	margin-top: 20px;
-  }
-  
-  .swiper-pagination-bullet {
-	background-color: white !important; /* White color for pagination bullets */
-	opacity: 0.6; /* Slight transparency */
-	width: 10px !important; /* Bullet size */
-	height: 10px !important; /* Bullet size */
-	margin: 0 4px; /* Space between bullets */
-	transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition */
-  }
-  
+}
 
-  /* Custom Swiper Pagination Bullets */
+.swiper-pagination-bullet {
+	background-color: white !important;
+	/* White color for pagination bullets */
+	opacity: 0.6;
+	/* Slight transparency */
+	width: 10px !important;
+	/* Bullet size */
+	height: 10px !important;
+	/* Bullet size */
+	margin: 0 4px;
+	/* Space between bullets */
+	transition: background-color 0.3s ease, opacity 0.3s ease;
+	/* Smooth transition */
+}
+
+
+/* Custom Swiper Pagination Bullets */
 .swiper-pagination-bullet {
 	background-color: white;
 	opacity: 0.5;
-  }
-  
-  .swiper-pagination-bullet-active {
+}
+
+.swiper-pagination-bullet-active {
 	background-color: white;
 	opacity: 1;
+}
+
+
+video::-webkit-media-controls-panel {
+	display: none !important;
+	-webkit-appearance: none;
+}
+
+video::-webkit-media-controls-play-button {
+	display: none !important;
+	-webkit-appearance: none;
+}
+
+video::-webkit-media-controls-start-playback-button {
+	display: none !important;
+	-webkit-appearance: none;
+}
+
+header {
+	display: -webkit-flex;
+	-webkit-box-flex: wrap;
+}
+
+@keyframes reveal {
+	0% {
+		opacity: 0;
+		transform: rotateX(-90deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+	}
+}
+
+.word-animate {
+	perspective: 1000px;
+}
+
+.word-animate p {
+	transform-origin: top center;
+	backface-visibility: hidden;
+}
+.perspective {
+	perspective: 1000px;
   }
   
-
-  video::-webkit-media-controls-panel {
-	display: none !important;
-	-webkit-appearance: none;
+  .rotate-x-0 {
+	transform: rotateX(0deg);
   }
-  video::-webkit-media-controls-play-button {
-	display: none !important;
-	-webkit-appearance: none;
+  
+  .rotate-x-90 {
+	transform: rotateX(90deg);
   }
-  video::-webkit-media-controls-start-playback-button {
-	display: none !important;
-	-webkit-appearance: none;
+  
+  
+  .rotate-x-270 {
+	transform: rotateX(-70deg);
+	opacity: 0;
   }
-
-header{
-display: -webkit-flex;
--webkit-box-flex: wrap;
-  }
+  
+  
