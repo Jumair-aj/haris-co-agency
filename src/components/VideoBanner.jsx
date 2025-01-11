@@ -6,7 +6,7 @@ export default function VideoBanner() {
     return (
         <div className="bg-white  w-full flex justify-center items-center relative">
             {/* <p className="text-[44px] text-black font-bold">need</p> */}
-            <video src={BannerVideo} controls={false} autoPlay={true} loop={true} muted={isMuted} className="h-[90dvh] object-cover" />
+            <video src={BannerVideo}  playsInline webkit-playsinline="true" controls={false} autoPlay={true} loop={true} muted={isMuted} className="h-[90dvh] object-cover" />
             {/* <button className="absolute right-10 bottom-10 text-black" onClick={() => setIsMuted(!isMuted)}>Mute</button> */}
         </div>)
 }

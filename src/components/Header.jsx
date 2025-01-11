@@ -74,15 +74,15 @@ export default function Header() {
 
   return (
     <div style={{ height: `${headerHeight}px` }}>
-      <header className="fixed z-10 px-[16px] md:px-[40px] lg:px-[80px] py-[35px] w-full bg-[#141414]  flex justify-between items-center flex-wrap " style={{ translateY: '-1000px' }}>
-
-        <div className=''>
+      <header className="fixed z-10 px-[16px] md:px-[40px] lg:px-[80px] py-[35px] w-full bg-[#141414]  flex justify-between items-center flex-wrap" style={{ translateY: '-1000px', }}>
+        <div className='max-w-fit'>
           <img
             src={Logo}
             alt="Haris & Co."
             className=""
             style={{
               height: `${getScaledLogoSize(0)}px`,
+              
             }}
           />
         </div>
@@ -101,7 +101,7 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="lg:hidden flex ms-auto">
+        <div className="lg:hidden flex ms-auto max-w-fit">
           <button onClick={toggleMenu}>
             {/* {menuIcon ? */}
             {/* // <img src={menuIcon} alt="Menu Icon" className="" /> */}
