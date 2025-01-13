@@ -1,7 +1,7 @@
 import React from "react";
-import Blog1 from "../assets/images/blogs/blog1.png";
-import Blog2 from "../assets/images/blogs/blog2.png";
-import Blog3 from "../assets/images/blogs/blog3.png";
+import Blog1 from "@/assets/images/blogs/blog1.png";
+import Blog2 from "@/assets/images/blogs/blog2.png";
+import Blog3 from "@/assets/images/blogs/blog3.png";
 import RightArrowOfWhite from "@/assets/images/icons/rightArrowOffwhite.png";
 import { Link } from 'react-router-dom';
 import { MoveRight } from "lucide-react";

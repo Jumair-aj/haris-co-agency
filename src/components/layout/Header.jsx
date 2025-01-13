@@ -4,7 +4,7 @@ import Logo from '@/assets/images/Haris&Co.svg';
 import menuIcon from '@/assets/images/icons/menu.svg';
 import ContactButton from '../ui/HomePage/ContactButton';
 import { useState, useEffect } from 'react';
-import MobileMenu from '../ui/HomePage/MobileMenu';
+import MobileMenu from './MobileMenu';
 
 
 export default function Header() {

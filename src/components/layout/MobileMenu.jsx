@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ContactButton from './ContactButton'
+import ContactButton from '../ui/HomePage/ContactButton'
 import Logo from '@/assets/images/Haris&Co-logo.svg';
 
 

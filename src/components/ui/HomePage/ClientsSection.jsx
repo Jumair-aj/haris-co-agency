@@ -5,10 +5,10 @@ import "swiper/css/pagination"; // Import pagination styles for Swiper
 import 'swiper/css/navigation';
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 
-import client1 from "../assets/images/clients/client1.png";
-import client2 from "../assets/images/clients/client2.png";
-import client3 from "../assets/images/clients/client3.png";
-import client4 from "../assets/images/clients/client4.png";
+import client1 from "@/assets/images/clients/client1.png";
+import client2 from "@/assets/images/clients/client2.png";
+import client3 from "@/assets/images/clients/client3.png";
+import client4 from "@/assets/images/clients/client4.png";
 import PlayIcon from "@/assets/images/icons/play.svg";
 import { Link } from "react-router-dom";
 import { MoveRight } from "lucide-react";
