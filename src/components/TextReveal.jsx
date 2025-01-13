@@ -29,7 +29,7 @@ export default function TextReveal3D() {
           }`}
           style={{ transformOrigin: 'center center -100px' }}
         >
-          <p className="text-[150px] xl:text-[200px] text-black font-[boldtext] tracking-[-3mm]  text-center">
+          <p className="text-[150px]  xl:text-[175px] text-black font-[boldtext] tracking-[-3mm]  text-center">
             {word}
           </p>
         </div>
