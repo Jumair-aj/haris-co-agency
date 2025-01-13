@@ -1,5 +1,5 @@
 import React from 'react';
-import OurWorksData from '../utils/data/ourWorks';
+import OurWorksData from '../../../utils/data/ourWorks';
 import RightArrowOfBlack from "@/assets/images/icons/rightArrowOfBlack.png";
 import { Link } from 'react-router-dom';
 import { MoveRight } from 'lucide-react';

@@ -1,8 +1,8 @@
 import React from "react";
-import facebookIcon from "../assets/images/icons/facebookIcon.svg";
-import instaIcon from "../assets/images/icons/instaIcon.svg";
-import linkedInIcon from "../assets/images/icons/linkedinIcon.svg";
-import xIcon from "../assets/images/icons/xIcon.svg";
+import facebookIcon from "@/assets/images/icons/facebookIcon.svg";
+import instaIcon from "@/assets/images/icons/instaIcon.svg";
+import linkedInIcon from "@/assets/images/icons/linkedinIcon.svg";
+import xIcon from "@/assets/images/icons/xIcon.svg";
 import Logo from "@/assets/images/Haris&Co-blk.svg";
 
 const Footer = () => {
