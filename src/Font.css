@@ -1,0 +1,88 @@
+
+@font-face {
+	font-family: thin;
+	src: url(./Font/HelveticaNeueLight.otf);
+}
+
+@font-face {
+	font-family: boldtext;
+	src: url(./Font/HelveticaNeueBold.otf);
+}
+
+
+/* poppins */
+
+.poppins-thin {
+	font-family: "Poppins", serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.poppins-extralight {
+	font-family: "Poppins", serif;
+	font-weight: 200;
+	font-style: normal;
+}
+
+.poppins-light {
+	font-family: "Poppins", serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.poppins-regular {
+	font-family: "Poppins", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.poppins-medium {
+	font-family: "Poppins", serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.poppins-semibold {
+	font-family: "Poppins", serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.poppins-bold {
+	font-family: "Poppins", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.poppins-extrabold {
+	font-family: "Poppins", serif;
+	font-weight: 800;
+	font-style: normal;
+}
+
+.bebas-neue-regular {
+	font-family: "Bebas Neue", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+/* main font */
+@font-face {
+	font-family: Abroregular;
+	src: url(./Font/Abro/AbroSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: Abrobold;
+	src: url(./Font/Abro/AbroSans-Bold.ttf);
+}
+
+
+
+@font-face {
+	font-family: Abrothin;
+	src: url(./Font/Abro/AbroSans-Thin.ttf);
+}
+
+

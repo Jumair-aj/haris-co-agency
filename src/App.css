@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+/* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55'); */
 
 * {
 	margin: 0;
@@ -27,16 +27,6 @@ a {
 	max-width: 1450px;
 	margin: auto;
 	width: 90%;
-}
-
-@font-face {
-	font-family: thin;
-	src: url(./Font/HelveticaNeueLight.otf);
-}
-
-@font-face {
-	font-family: boldtext;
-	src: url(./Font/HelveticaNeueBold.otf);
 }
 
 .featureGradient {
@@ -127,22 +117,21 @@ header {
 	transform-origin: top center;
 	backface-visibility: hidden;
 }
+
 .perspective {
 	perspective: 1000px;
-  }
-  
-  .rotate-x-0 {
+}
+
+.rotate-x-0 {
 	transform: rotateX(0deg);
-  }
-  
-  .rotate-x-90 {
+}
+
+.rotate-x-90 {
 	transform: rotateX(90deg);
-  }
-  
-  
-  .rotate-x-270 {
+}
+
+
+.rotate-x-270 {
 	transform: rotateX(-70deg);
 	opacity: 0;
-  }
-  
-  
+}
