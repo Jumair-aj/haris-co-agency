@@ -29,7 +29,7 @@ function AddressSection() {
             </div>
             <div className="w-4/5 lg:w-3/5 xl:w-3/4">
               <p className="text-[20px] md:text-2xl text-black text-start font-[thin]">
-                080757 72921
+                +91 80750 40330
               </p>
             </div>
           </div>
@@ -66,7 +66,7 @@ function AddressSection() {
             </div>
             <div className="w-4/5 lg:w-3/5 xl:w-3/4">
               <p className="text-[20px] md:text-2xl text-black text-start font-[thin]">
-                +91 80750 40330
+                +971 58 848 6733
               </p>
             </div>
           </div>

@@ -16,20 +16,17 @@ SwiperCore.use([Navigation, Pagination]);
 
 export default function DepartmentHead() {
   const teamMembers = [
-    { name: "Abu Nabhan", role: "Chief of Branding", img: NabhanImg },
-    { name: "Nihal Zubair", role: "Chief of Creative", img: NihalImg },
-    { name: "Vishnu KP", role: "Chief of Production", img: vishnuImg },
-    { name: "Ragin Raj", role: "Chief of SEO", img: RaginImg },
+    { name: "Aswathi KP", role: "Human Resource", img: NabhanImg },
+    { name: "Amna Iqbal", role: "Marketing", img: NabhanImg },
     {
-      name: "Adarsh MS",
-      role: "Chief of Performance Marketing",
-      img: AdarshImg,
+      name: "Mohamed Azaruddin",
+      role: "Brand Solutions",
+      img: NabhanImg,
     },
-    {
-      name: "Muhammed Shabeer",
-      role: "UAE Region",
-      img: AdarshImg,
-    },
+    { name: "Faheemudheen K", role: "Design", img: NabhanImg },
+    { name: "Navneeth B Chandran", role: "Brand Consultants", img: NabhanImg },
+    { name: "Shazmina Abbas", role: "Accounts", img: NabhanImg },
+    
   ];
   const slideCount = teamMembers.length;
 
@@ -87,13 +84,13 @@ export default function DepartmentHead() {
           {teamMembers.map((member, index) => (
             <SwiperSlide key={index}>
               <div className="flex flex-col items-start">
-                <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[200px]">
+                {/* <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[200px]">
                   <img
                     className="pt-8 w-full h-full object-cover"
                     src={member.img}
                     alt={member.name}
                   />
-                </div>
+                </div> */}
                 <p className="text-[18px] 3xl:text-[24px] mt-1">
                   {member.name}
                 </p>
@@ -147,13 +144,13 @@ export default function DepartmentHead() {
           {businessHeads.map((member, index) => (
             <SwiperSlide key={index}>
               <div className="flex flex-col items-start w-fit">
-                <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[200px]">
+                {/* <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[200px]">
                   <img
                     className="pt-8 w-full h-full object-cover"
                     src={member.img}
                     alt={member.name}
                   />
-                </div>
+                </div> */}
                 <p className="text-[18px] 3xl:text-[24px] mt-1">
                   {member.name}
                 </p>

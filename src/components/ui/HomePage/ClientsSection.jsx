@@ -26,31 +26,31 @@ function ClientsSection() {
       img: arsh,
       name: "Arsh Navas",
       role: "Chief Brand Officer",
-      link: "https://www.youtube.com/watch?v=u4hVsNXVoYE"
+      link: "https://www.instagram.com/reel/DB367jVBT2u/?igsh=MWd5cGluMGxkdjV3cg=="
     },
     {
       img: ashik,
       name: "Ashik",
       role: "Marketing Director",
-      link: "https://www.youtube.com/watch?v=CXk-xI4Npmc"
+      link: "https://www.instagram.com/reel/DB3yj-xhe2_/?igsh=MWdrZmV2dHJpZWR4aQ=="
     },
     {
       img: kevin,
       name: "Kevin Mohanji Gera",
       role: "Business Development Manager",
-      link: "https://www.youtube.com/watch?v=LXWGDUwGkEk"
+      link: "https://www.instagram.com/reel/C3ukEL8P-3L/?igsh=bDZzb2xybXh4aThs"
     },
     {
       img: Jasim,
       name: "Jasim SM",
       role: "CEO BOSQ",
-      link: "https://www.youtube.com/watch?v=qhehmRAaO7Y"
+      link: "https://www.instagram.com/reel/C3ukEL8P-3L/?igsh=bDZzb2xybXh4aThs"
     },
     {
       img: shan,
       name: "Shan A Salam",
       role: "Founder The One Percentage",
-      link: "https://www.youtube.com/watch?v=PU2ILf3qTt0"
+      link: "https://www.instagram.com/reel/C3r7E01Pn9_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     }
   ];
 
@@ -75,41 +75,45 @@ function ClientsSection() {
           className="swiper-pagination-white"
         >
           {clients.map((client, index) => (
-           <SwiperSlide key={index}>
-           <div className="relative">
-             <img
-               className="object-contain"
-               src={client.img}
-               alt={client.name}
-             />
-         
-             {/* Bottom white gradient overlay */}
-             <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-white to-transparent z-10" />
-         
-             {/* Text and Play button */}
-             <div className="flex items-center justify-between w-full absolute bottom-6 px-6 z-20">
-               <div>
-                 <p className="font-medium text-black text-[32px] leading-none">
-                   {client.name}
-                 </p>
-                 <p className="text-[20px] text-black font-[thin]">
-                   {client.role}
-                 </p>
-               </div>
-         
-               <div>
-                 <a target="_blank" href={client.link}>
-                   <img src={PlayIcon} alt="Play" />
-                 </a>
-               </div>
-             </div>
-           </div>
-         </SwiperSlide>
+            <SwiperSlide key={index}>
+              <a
+                href={client.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block relative"
+              >
+                <img
+                  className="object-contain w-full"
+                  src={client.img}
+                  alt={client.name}
+                />
+
+                {/* Bottom white gradient overlay */}
+                <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-white to-transparent z-10" />
+
+                {/* Text and Play button */}
+                <div className="flex items-center justify-between w-full absolute bottom-6 px-6 z-20">
+                  <div>
+                    <p className="font-medium text-black text-[32px] leading-none">
+                      {client.name}
+                    </p>
+                    <p className="text-[20px] text-black font-[thin]">
+                      {client.role}
+                    </p>
+                  </div>
+
+                  <div>
+                    <img src={PlayIcon} alt="Play" />
+                  </div>
+                </div>
+              </a>
+            </SwiperSlide>
+
           ))}
         </Swiper>
       </div>
       <div className="w-full hidden justify-center mt-[80px] pb-[80px] h-full md:flex">
-        <Link
+        {/* <Link
           to="/clients"
           className="group flex gap-[11px] text-white/55 border-b border-white/55 pb-0.5 hover:text-white hover:border-b-white transition-all duration-300"
         >
@@ -121,7 +125,7 @@ function ClientsSection() {
             className="text-white/55 transition-all duration-300 group-hover:text-white"
             strokeWidth={1.8}
           />
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

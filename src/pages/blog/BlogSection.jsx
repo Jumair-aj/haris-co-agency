@@ -51,9 +51,9 @@ export default function BlogSection({ blogContent }) {
             />
           ))}
         </div>
-        <div className="border-b border-gray-600 w-fit mx-auto">
+        {/* <div className="border-b border-gray-600 w-fit mx-auto">
           <p className="text-gray-600">View All Blogs</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

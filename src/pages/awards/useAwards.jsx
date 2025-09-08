@@ -1,10 +1,10 @@
 import React from "react";
-import image1 from "@/assets/images/awards/awards1.jpeg";
-import image2 from "@/assets/images/awards/awards2.jpeg";
-import image3 from "@/assets/images/awards/awards3.jpeg";
-import image4 from "@/assets/images/awards/awards4.jpeg";
-import image6 from "@/assets/images/awards/awards6.jpg";
-import image5 from "@/assets/images/awards/pepper-award.JPG";
+import image1 from "@/assets/images/awards/award1.jpeg";
+import image2 from "@/assets/images/awards/award2.jpeg";
+import image3 from "@/assets/images/awards/award3.jpeg";
+import image4 from "@/assets/images/awards/award4.jpeg";
+// import image6 from "@/assets/images/awards/award6.jpg";
+// import image5 from "@/assets/images/awards/pepper-award.JPG";
 import brand from "@/assets/images/awards/brand.png";
 import peperLogo from "@/assets/images/awards/peperLogo.jpg";
 
@@ -17,13 +17,13 @@ export default function useAwards() {
       desc: "Love was in the air, and so was our Valentine’s Day Campaign for Haris&Co! The content struck a chord with audiences, making hearts smile and feeds light up with joy. All that love earned us the silver award from Afaqs! for ‘Best Use of Video on Social Media’, a recognition that celebrated the playful spirit and emotional connect of the campaign.",
       brandImg: brand,
     },
-    {
-      image: image6,
-      title: "Afaqs! startup brands Silver",
-      date: "2023",
-      desc: "Mother’s Day felt extra special with our campaign for Craftise, a crafting materials supplier. It celebrated the little handmade moments and the joy of gifting that make mothers feel truly appreciated. All that love was recognized with a silver award for ‘Best Branded Content’.",
-      brandImg: peperLogo,
-    },
+    // {
+    //   image: image6,
+    //   title: "Afaqs! startup brands Silver",
+    //   date: "2023",
+    //   desc: "Mother’s Day felt extra special with our campaign for Craftise, a crafting materials supplier. It celebrated the little handmade moments and the joy of gifting that make mothers feel truly appreciated. All that love was recognized with a silver award for ‘Best Branded Content’.",
+    //   brandImg: peperLogo,
+    // },
     {
       image: image2,
       title: "Afaqs! startup brands Silver ",

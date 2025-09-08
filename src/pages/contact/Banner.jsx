@@ -21,35 +21,63 @@ function Banner() {
             </p>
           </div>
           <div className="flex justify-between md:justify-start gap-4 sm:gap-5 md:gap-6 pe-8">
-            <div className="border-[1.5px] border-white rounded-full flex items-center justify-center w-[50px] h-[50px] 3xl:w-[80px] 3xl:h-[80px]">
+            {/* Facebook */}
+            <a
+              href="https://www.facebook.com/yourpage"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-[1.5px] border-white rounded-full flex items-center justify-center w-[50px] h-[50px] 3xl:w-[80px] 3xl:h-[80px] hover:bg-white/10 transition"
+            >
               <img
                 src={facebookIcon}
-                alt="facebook Icon"
-                className="max-w-max w-[25px] h-[25px] 3xl:w-[40px] 3xl:h-[40px]"
+                alt="Facebook"
+                className="w-[25px] h-[25px] 3xl:w-[40px] 3xl:h-[40px]"
               />
-            </div>
-            <div className="border-[1.5px] border-white rounded-full flex items-center justify-center w-[50px] h-[50px] 3xl:w-[80px] 3xl:h-[80px]">
+            </a>
+
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/in/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-[1.5px] border-white rounded-full flex items-center justify-center w-[50px] h-[50px] 3xl:w-[80px] 3xl:h-[80px] hover:bg-white/10 transition"
+            >
               <img
                 src={linkedInIcon}
-                alt="linked in Icon"
-                className="max-w-max w-[25px] h-[25px] 3xl:w-[40px] 3xl:h-[40px]"
+                alt="LinkedIn"
+                className="w-[25px] h-[25px] 3xl:w-[40px] 3xl:h-[40px]"
               />
-            </div>
-            <div className="border-[1.5px] border-white rounded-full flex items-center justify-center w-[50px] h-[50px] 3xl:w-[80px] 3xl:h-[80px]">
+            </a>
+
+            {/* X / Twitter */}
+            <a
+              href="https://twitter.com/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-[1.5px] border-white rounded-full flex items-center justify-center w-[50px] h-[50px] 3xl:w-[80px] 3xl:h-[80px] hover:bg-white/10 transition"
+            >
               <img
                 src={xIcon}
-                alt="x icon"
-                className="max-w-max w-[20px] h-[20px] 3xl:w-[35px] 3xl:h-[35px]"
+                alt="Twitter / X"
+                className="w-[20px] h-[20px] 3xl:w-[35px] 3xl:h-[35px]"
               />
-            </div>
-            <div className="border-[1.5px] border-white rounded-full flex items-center justify-center w-[50px] h-[50px] 3xl:w-[80px] 3xl:h-[80px]">
+            </a>
+
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-[1.5px] border-white rounded-full flex items-center justify-center w-[50px] h-[50px] 3xl:w-[80px] 3xl:h-[80px] hover:bg-white/10 transition"
+            >
               <img
                 src={instaIcon}
-                alt="insta icon"
-                className="max-w-max w-[25px] h-[25px] 3xl:w-[40px] 3xl:h-[40px]"
+                alt="Instagram"
+                className="w-[25px] h-[25px] 3xl:w-[40px] 3xl:h-[40px]"
               />
-            </div>
+            </a>
           </div>
+
         </div>
         <img src={img} alt="" />
       </div>

@@ -36,7 +36,7 @@ export default function FeatureSection() {
       <div className="flex flex-col gap-[25px]  md:gap-[50px] h-full select-none">
         {services.map((service, index) => (  
           <div
-          className={`flex gap-[20px] cursor-pointer items-center ${
+          className={`flex gap-[20px] cursor-pointer items-center  ${
             isHovered === "branding" && "translate-x-10"
           }`}
           onMouseEnter={() => setIsHovered(service.howerPathName)}
@@ -44,7 +44,7 @@ export default function FeatureSection() {
         >
           <Link to={service.path}>
           <p
-            className={`text-nowrap text-[22px] md:text-[30px] lg:text-[40px] text-black font-[helvetica-medium] ${
+            className={`text-nowrap text-[22px]  lg:text-[30px] text-black font-[helvetica-medium] ${
               isHovered === service.howerPathName
                 ? "text-white"
                 : isHovered && " text-white/55"

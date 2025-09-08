@@ -18,7 +18,7 @@ export default function About() {
             <DepartmentHead />
             {/* <BusinessHeads/> */}
             <LifeSection />
-            <AwardsSection />
+            {/* <AwardsSection /> */}
         </>
     )
 }
