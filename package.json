@@ -12,7 +12,7 @@
     "react-helmet": "^6.1.0",
     "react-router-dom": "^7.1.1",
     "react-scripts": "5.0.1",
-    "swiper": "^11.1.15",
+    "swiper": "^11.2.4",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
@@ -40,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "*",
     "tailwindcss": "^3.4.17"
   }
 }
