@@ -14,11 +14,10 @@ import PlayIcon from "@/assets/images/icons/play.svg";
 import arabi from "@/assets/images/clients/arabi.jpg"
 import { Link } from "react-router-dom";
 import { MoveRight } from "lucide-react";
-// styled-component wrap
-// one of data you want to show
+
 import SwiperCore from "swiper";
 
-// install Swiper modules
+
 SwiperCore.use([Navigation, Pagination]);
 
 function ClientsSection() {
@@ -48,7 +47,7 @@ function ClientsSection() {
     {
       img: Jasim,
       name: "Jasim SM",
-      role: "CEO BOSQ",
+      role: "CEO ",
       link: "https://www.instagram.com/reel/C3ukEL8P-3L/?igsh=bDZzb2xybXh4aThs",
       company: "Bosq Ergonomic Living"
     },
